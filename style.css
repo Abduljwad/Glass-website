@@ -1,0 +1,225 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glass {
+        background: white;
+        height: 80vh;
+        width: 60%;
+        border-radius: 2rem;
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+        );
+        z-index: 3;
+        backdrop-filter: blur(2rem);
+        display: flex;
+}
+.circle1,
+.circle2 {
+    background: white;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+}
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+.circle2 {
+    bottom: 5%;
+    left: 10%;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 2rem;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+}
+.user img {
+    width: 100px;
+}
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    /* padding: 1rem 5rem; */
+    padding: 0.1rem 5rem;
+    align-items: center;
+}
+.link h2 {
+    padding: 0rem 2rem;
+}
+.games {
+    flex: 2;
+}
+.pro {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    padding: 10px;
+    /* padding: 1rem; */
+    color: white;
+    position: relative;
+
+}
+
+.pro img {
+    position: absolute;
+    top: -10%;
+    right: 10%;
+}
+.pro h2 {
+    width: 40%;
+    color: white;
+    font-weight: 600;
+}
+
+/* Games  */
+.status {
+    margin-bottom: 3rem;
+}
+.status input {
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+}
+.status input:focus {
+    outline: 1px solid #65dfc9;
+    caret-color: #65dfc9;
+    
+}
+
+.games {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card {
+    display: flex;
+    border-radius: 1rem;
+    background: linear-gradient(
+        to left top,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5)
+    );
+    margin: 1.5rem 0rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    justify-content: space-between;
+}
+.progress {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.progress::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    left: 60%;
+}
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.percentage {
+    font-weight: bold0;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1300px) {
+    .glass {
+        height: 100vh;
+        width: 90%;
+    }
+}
+@media (max-width: 991px){
+    .card {
+        text-align: center;
+    align-items: center;
+    padding: 0;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .card img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .glass {
+        flex-direction: column;
+        width: 90%;
+        height: 85vh;
+    }
+    h1 {
+        margin-top: 80px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
